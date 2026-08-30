@@ -13,5 +13,8 @@ fresh approval check.
 
 ## Reporting a vulnerability
 
-Use GitHub private vulnerability reporting. Do not publish live customer data,
-credentials, or an unpatched exploit in a public issue.
+Do not publish live customer data, credentials, or an unpatched exploit in a
+public issue. Repository collaborators should create a private draft advisory
+under **Security → Advisories**. If this repository becomes public, enable GitHub
+private vulnerability reporting before launch so external reporters have a
+confidential channel.
