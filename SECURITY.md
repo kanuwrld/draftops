@@ -11,6 +11,9 @@ DraftOps does not send messages. Treat any connector added downstream as a new
 security boundary requiring authentication, authorization, idempotency, and a
 fresh approval check.
 
+Run `python scripts/public_safety.py` before every public push. CI scans tracked
+files and the full Git history and hides any matched value from its output.
+
 ## Reporting a vulnerability
 
 Do not publish live customer data, credentials, or an unpatched exploit in a

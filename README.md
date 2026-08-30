@@ -124,9 +124,14 @@ legal advice.
 ## Development
 
 ```bash
+python scripts/public_safety.py
 python -m unittest discover -s tests -v
 python -m compileall -q src tests
 ```
+
+The public-safety check scans every tracked file and the full Git history for
+high-confidence credential patterns and forbidden secret-bearing filenames. It
+reports rule names and locations without printing matched values.
 
 ## Roadmap
 
@@ -138,3 +143,6 @@ python -m compileall -q src tests
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+If DraftOps is useful for building safer support automation, a star helps other
+builders find it.
