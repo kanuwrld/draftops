@@ -1,0 +1,20 @@
+{
+  "DEMO-1042": {
+    "category": "billing",
+    "priority": "urgent",
+    "confidence": 0.92,
+    "draft": "We will review the duplicate charge for ORD-10420 before taking any account action."
+  },
+  "DEMO-1043": {
+    "category": "product",
+    "priority": "normal",
+    "confidence": 0.86,
+    "draft": "A specialist will review the fictional integration setup and prepare draft guidance."
+  },
+  "DEMO-1044": {
+    "category": "other",
+    "priority": "normal",
+    "confidence": 0.51,
+    "draft": "A human specialist will review this request and choose the next step."
+  }
+}

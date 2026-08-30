@@ -1,0 +1,18 @@
+name: Bug report
+description: Report a reproducible DraftOps problem
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Sanitized reproduction
+      description: Use fictional tickets and remove personal data, credentials, and customer content.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DraftOps and Python versions
+    validations:
+      required: true

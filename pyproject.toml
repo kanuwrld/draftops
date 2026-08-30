@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "draftops"
+version = "0.1.0"
+description = "Privacy-aware, draft-only support triage automation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "kanu" }]
+keywords = ["ai", "automation", "support", "privacy", "human-in-the-loop"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.scripts]
+draftops = "draftops.cli:main"
+
+[project.urls]
+Repository = "https://github.com/kanuwrld/draftops"
+Issues = "https://github.com/kanuwrld/draftops/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

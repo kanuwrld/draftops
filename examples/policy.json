@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "minimum_confidence": 0.6,
+  "urgent_keywords": [
+    "charged twice",
+    "account compromised",
+    "data breach",
+    "cannot access"
+  ],
+  "custom_redactions": [
+    {
+      "label": "order_id",
+      "pattern": "\\b(?:ORD|ACC)-\\d{4,}\\b"
+    }
+  ],
+  "categories": {
+    "billing": {
+      "keywords": [
+        "invoice",
+        "charged",
+        "billing",
+        "refund",
+        "payment"
+      ],
+      "default_priority": "high",
+      "reply_template": "We received the billing request for ticket {ticket_id}. A human specialist will verify the account context before any action is taken."
+    },
+    "access": {
+      "keywords": [
+        "login",
+        "sign in",
+        "cannot access",
+        "locked out"
+      ],
+      "default_priority": "high",
+      "reply_template": "We received the access request for ticket {ticket_id}. A human specialist will verify identity and next steps."
+    },
+    "product": {
+      "keywords": [
+        "feature",
+        "how do i",
+        "integration",
+        "settings"
+      ],
+      "default_priority": "normal",
+      "reply_template": "We received the product question for ticket {ticket_id}. A specialist will review the requested workflow and prepare guidance."
+    },
+    "other": {
+      "keywords": [],
+      "default_priority": "normal",
+      "reply_template": "We received ticket {ticket_id}. A human specialist will review it and choose the correct next step."
+    }
+  }
+}
